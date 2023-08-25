@@ -5,6 +5,7 @@ import SignUp from "../pages/SignUp";
 import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 import Customers from "../pages/Customers";
+import New from "../pages/New";
 
 import Private from "./Private";
 
@@ -22,6 +23,7 @@ function RoutesApp() {
           </Private>
         }
       />
+
       <Route
         path="/profile"
         element={
@@ -30,11 +32,21 @@ function RoutesApp() {
           </Private>
         }
       />
+
       <Route
         path="/customers"
         element={
           <Private>
             <Customers />
+          </Private>
+        }
+      />
+
+      <Route
+        path="/new"
+        element={
+          <Private>
+            <New />
           </Private>
         }
       />
